@@ -17,7 +17,7 @@ lang: en-US
 title: Data Trailblazing
 email: 
 description: "This place is for those who are fascinated with the world of data science and want to learn more to pave new paths!"
-baseurl: "/Website" # the optional subpath of your site, e.g. "/blog"
+baseurl: "/DataTrailblazing" # the optional subpath of your site, e.g. "/blog"
 url: "https://amillane.gitub.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: 
   name: Drew Millane 
