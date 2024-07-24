@@ -19,8 +19,8 @@ email: amillane99@outlook.com
 description: This place is for those who are fascinated with the world of data science and want to learn more to pave new paths!
 baseurl: "/Website" # the optional subpath of your site, e.g. "/blog"
 url: "https://amillane.gitub.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author: Drew Millane 
-  name:
+author: 
+  name: Drew Millane 
   twitter:
   picture:
 twitter_username:
