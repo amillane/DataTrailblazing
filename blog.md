@@ -1,9 +1,9 @@
 ---
-title: Posts
+title: Blog
 layout: collection
-permalink: /blog/
-collection: blog
+permalink: /posts/
+collection: posts
 entries_layout: grid
 ---
 
-Sample document listing for the collection `_blog`.
+Sample document listing for the collection `_posts`.
