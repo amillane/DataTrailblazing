@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "A Nature Walk Into Machine Learning"
 date:   2022-09-22
 introduction: A simple tutorial on how to use random forests in R programming.
