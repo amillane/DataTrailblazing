@@ -4,6 +4,10 @@ title:  "A Nature Walk Into Machine Learning"
 date:   2022-09-22
 introduction: A simple tutorial on how to use random forests in R programming.
 image: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
+image: 
+  path: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
+  thumbnail: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
+  caption: "Photo from [Pexels](https://www.pexels.com)"
 
 # post specific author data if different from what is set in _config.yml 
 
