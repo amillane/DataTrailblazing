@@ -6,6 +6,7 @@ image:
   path: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
   thumbnail: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
   caption: "Photo from [Pexels](https://www.pexels.com)"
+read_time: true
 
 # post specific author data if different from what is set in _config.yml 
 
