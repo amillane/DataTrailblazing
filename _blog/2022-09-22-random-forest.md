@@ -6,8 +6,6 @@ introduction: A simple tutorial on how to use random forests in R programming.
 image: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
 
 # post specific author data if different from what is set in _config.yml 
-author:
-  name: Drew Millane
 
 comments: true  # disable comments on this post
 ---
