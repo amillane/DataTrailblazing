@@ -2,7 +2,7 @@
 title: Blog
 layout: collection
 permalink: /blog/
-collection: blog
+collection: _blog
 entries_layout: grid
 ---
 
