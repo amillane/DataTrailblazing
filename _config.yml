@@ -14,26 +14,26 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Awesome Site
-email:
-description:
+title: Data Trailblazing
+email: amillane99@outlook.com
+description: This place is for those who are fascinated with the world of data science and want to learn more to pave new paths!
 baseurl: "/Website" # the optional subpath of your site, e.g. "/blog"
 url: "https://amillane.gitub.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author:
+author: Drew Millane 
   name:
   twitter:
   picture:
 twitter_username:
-github_username:
+github_username: amillane
 logo: # path of site logo, e.g. "/assets/images/logo.png"
-search: # true, false (default)
+search: true # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
-  powered_by: # true (default), false
+  powered_by: false # true (default), false
 
 # Build settings
 markdown: kramdown
