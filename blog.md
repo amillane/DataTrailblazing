@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: collection
-permalink: /blog/
+permalink: /_blog/
 collection: _blog
 entries_layout: grid
 ---
