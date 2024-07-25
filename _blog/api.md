@@ -3,8 +3,12 @@ layout: post
 title: "API's Right As Rain"
 date: 2022-10-19
 author: Drew Millane 
-description: Using API keys to webscrape weather data.
-image: https://www.stockvault.net/data/2007/03/01/98725/preview16.jpg
+introduction: Using API keys to webscrape weather data.
+read_time: true
+image: 
+  path: https://www.stockvault.net/data/2007/03/01/98725/preview16.jpg
+  thumbnail: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
+  caption: "Photo from [Pexels](https://www.pexels.com)"
 ---
 
 # Introduction 
