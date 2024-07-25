@@ -7,11 +7,12 @@ introduction: Using API keys to webscrape weather data.
 read_time: true
 image: 
   path: https://www.stockvault.net/data/2007/03/01/98725/preview16.jpg
-  thumbnail: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
+  thumbnail: https://www.stockvault.net/data/2007/03/01/98725/preview16.jpg
   caption: "Photo from [Pexels](https://www.pexels.com)"
 ---
 
 # Introduction 
+
 
 <p align="center">
 <img src="https://github.com/amillane/stat386-projects/raw/main/assets/images/drought.png" width = "500" height="350">
