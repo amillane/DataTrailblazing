@@ -4,7 +4,12 @@ title: "A Peek Through the Clouds"
 date: 2022-11-14
 author: Drew Millane 
 introduction: Exploratory data analysis on weather in Provo
-image: https://miro.medium.com/max/800/1*swBI4_YaHnMIwOvz3rGuFQ.jpeg
+read_time: true
+image: 
+  path: https://miro.medium.com/max/800/1*swBI4_YaHnMIwOvz3rGuFQ.jpeg
+  thumbnail: https://miro.medium.com/max/800/1*swBI4_YaHnMIwOvz3rGuFQ.jpeg
+  caption: "Photo from [Pexels](https://www.pexels.com)"
+
 ---
  
 # Introduction 
