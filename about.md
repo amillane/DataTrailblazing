@@ -3,7 +3,7 @@ title: "About"
 layout: about
 actions:
   - label: "Portfolio"
-    icon: github
+    icon: website
     url: "https://amillane.github.io/"
   - label: "Resume"
     icon: pdf
