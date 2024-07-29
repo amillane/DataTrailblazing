@@ -8,7 +8,7 @@ actions:
   - label: "Resume"
     icon: pdf
     url: "https://drive.google.com/file/d/1fbRDV9iH3b0mhC3pJDvn6NdbQOhM9B1j/view?usp=sharing"
-- label: "LinkedIn"
+  - label: "LinkedIn"
     icon: linkedin
     url: "https://www.linkedin.com/in/drewmillane"
 ---
