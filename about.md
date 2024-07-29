@@ -1,6 +1,13 @@
 ---
 title: "About"
 layout: about
+actions:
+  - label: "Get Started"
+    icon: github
+    url: "https://github.com/mmistakes/jekyll-theme-basically-basic"
+  - label: "Download"
+    icon: download
+    url: "https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip"
 ---
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
@@ -12,3 +19,12 @@ Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as 
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
 You can find the source code for this theme at: {% include icon-github.html username="mmistakes" %}/[jekyll-theme-basically-basic](https://github.com/mmistakes/jekyll-theme-basically-basic)
+
+actions:
+  - label: "Get Started"
+    icon: github
+    url: "https://github.com/mmistakes/jekyll-theme-basically-basic"
+  - label: "Download"
+    icon: download
+    url: "https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip"
+
