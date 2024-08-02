@@ -1,6 +1,11 @@
 ---
 layout: post
 title: "API's Right As Rain"
+categories:
+ - API
+tags:
+ - api
+ - weather
 date: 2022-10-19
 author: Drew Millane 
 introduction: Using API keys to webscrape weather data.
