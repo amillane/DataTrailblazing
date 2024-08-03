@@ -1,7 +1,6 @@
 ---
 title: "About"
 layout: about
-image: assets/images/profile/IMG_4445.jpeg
 actions:
   - label: "Portfolio"
     icon: github
