@@ -78,7 +78,7 @@ exclude:
 collections:
   blog:
     output: true
-    permalink: /:collection/:path/
+    permalink: /blog/
   projects:
     output: true
     permalink: /:collection/:path
