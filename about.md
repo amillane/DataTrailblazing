@@ -1,5 +1,7 @@
 ---
-title: "About"
+author:
+  name: Drew Millane
+  picture: assets/images/profile/profile.png
 layout: about
 actions:
   - label: "Portfolio"
@@ -11,8 +13,5 @@ actions:
   - label: "LinkedIn"
     icon: linkedin
     url: "https://www.linkedin.com/in/drewmillane"
-author:
-  name: Drew Millane
-  picture: assets/images/profile/profile.png
 ---
 
