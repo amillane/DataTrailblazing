@@ -11,6 +11,7 @@ actions:
   - label: "LinkedIn"
     icon: linkedin
     url: "https://www.linkedin.com/in/drewmillane"
-image: assets/images/profile/IMG_4445.jpeg
+author:
+  image: assets/images/profile/profile.png
 ---
 
