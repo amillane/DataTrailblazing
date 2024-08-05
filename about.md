@@ -1,4 +1,5 @@
 ---
+title: 'About'
 author:
   name: Drew Millane
   picture: assets/images/profile/profile.png
