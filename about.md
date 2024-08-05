@@ -12,6 +12,7 @@ actions:
     icon: linkedin
     url: "https://www.linkedin.com/in/drewmillane"
 author:
-  image: assets/images/profile/profile.png
+  name: Drew Millane
+  picture: assets/images/profile/profile.png
 ---
 
