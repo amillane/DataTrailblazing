@@ -13,10 +13,6 @@ read_time: true
 ---
 
 
-<p align="center">
-<img src="https://images.unsplash.com/photo-1559828187-9bf6757861f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" width = "500" height='350'>
-</p>
-
 # Introduction
 
 For those who have been with me this entire journey, I hope you enjoyed the project as much as I did! This project started with a desire to know what is going on with the weather here in the West, specifically in Provo, Utah. To fulfill this desire, I started by collecting the data we needed to create our story. I used an API key to collect basic weather measurements recorded this year provided by a weather data service. Following data collection, I performed an exploratory data analysis and created graphics that focused on temperature, precipitation, and windspeed to uncover a piece of the puzzle. For more details, check the previous blog posts. 
@@ -100,3 +96,4 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 
 # The Story Doesn't End Here
 This is a story that I want to delve deeper into, because of its fascinating possibilities and explanations of why this phenomenon occurs. What do you think is happening here? Comment down below! Here is the link to the [repository](https://github.com/amillane/Provo_Weather-). 
+
