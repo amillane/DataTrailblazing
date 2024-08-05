@@ -1,7 +1,7 @@
 ---
 title: 'About'
 author:
-  name: Drew Millane
+  name: 'Drew Millane'
   picture: assets/images/profile/profile.png
 layout: about
 actions:
