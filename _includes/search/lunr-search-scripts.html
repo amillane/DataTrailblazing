@@ -42,6 +42,11 @@
     <script src="{{ '/assets/javascripts/lunr/lunr.stemmer.support.min.js' | absolute_url }}"></script>
     <script src="{{ '/assets/javascripts/lunr/lunr.' | append: lang | append: '.min.js' | absolute_url }}"></script>
   {%- endunless %}
+  <style>
+    input#search {
+      color: white;
+    }
+  </style>
   <script>
     var idx = lunr(function () {
       {% unless lang == "en" %}
