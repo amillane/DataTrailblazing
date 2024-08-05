@@ -13,12 +13,6 @@ image:
 ---
  
 # Introduction 
- 
-
-<p align="center">
-<img src="https://github.com/amillane/stat386-projects/raw/main/assets/images/Sherlock.png" width = "500" height='350'>
-</p>
-
 John Tukey once said, “The greatest value of a picture is when it forces us to notice what we never expected to see”. There is something beautiful about taking a hodgepodge of data and transforming it into a story. What we could not see is now unveiled for us to discover and ask more questions. In other words, exploratory data analysis propels curiosity and discovery. Excitedly, this power can be harnessed with a few lines of code. 
 
 As discussed in my previous blog post, weather patterns have a major impact on all we do, especially in this time of drought. With the scraped data we get to split the clouds and explore! In this post, I have shared five graphics that help display patterns in our dataset, each with a question in mind. I'll leave a link to my repository below. Let’s begin! 
