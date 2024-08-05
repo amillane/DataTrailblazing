@@ -76,7 +76,7 @@ exclude:
   - /example # ignore Basically Basic dev site
 
 collections:
-  blog:
+  posts:
     output: true
     permalink: /:collection/:path/
   projects:
