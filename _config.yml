@@ -78,10 +78,10 @@ exclude:
 collections:
   blog:
     output: true
-    permalink: /:collection/:path
+    permalink: /blog/:path
   projects:
     output: true
-    permalink: /:collection/:path
+    permalink: /projects/:path
 
 # Front Matter Defaults
 defaults:
