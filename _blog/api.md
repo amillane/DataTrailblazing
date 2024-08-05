@@ -17,12 +17,6 @@ image:
 ---
 
 # Introduction 
-
-
-<p align="center">
-<img src="https://github.com/amillane/stat386-projects/raw/main/assets/images/drought.png" width = "500" height="350">
-</p>
-
 North America is in a crisis. A crisis that trumps all other crises we are experiencing. The west is enduring one of the longest droughts ever recorded, which is bringing many dire consequences. While this problem looms over our heads, many are stepping up to the plate to solve this issue of water usage. 
 
 Currently, I am working with Dr. Heaton in the BYU Stat department to see how we can help farmers use water more wisely during this massive drought using machine learning. This topic of water scarcity in the west has made me curious about weather patterns and how much precipitation our area is getting. I scraped my dataset on weather measurements in Provo, Utah using an API key. So, let’s begin!
