@@ -1,8 +1,8 @@
 ---
 title: Posts
 layout: collection
-permalink: /posts/
-collection: posts
+permalink: /post/
+collection: post
 sort_order: reverse
 entries_layout: grid
 show_excerpts: true
