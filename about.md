@@ -6,7 +6,7 @@ author:
   picture: assets/images/profile/profile.png
 actions:
   - label: "Portfolio"
-    icon: website
+    icon: github
     url: "https://amillane.github.io/"
   - label: "Resume"
     icon: pdf
