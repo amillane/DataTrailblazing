@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caching In With Bayesian Statistics
+title: "Caching In With Bayesian Statistics"
 date: 2024-08-09
 author: Drew Millane and Sam Spackman
 introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
@@ -26,4 +26,4 @@ others are as small as a thimble. When a geocacher finds a geocache they have th
 cache a “favorite”, similar to a “like” on social media. The goal of our analysis is to determine whether
 a cache’s Terrain or Difficulty rating affects the number of favorites it receives.
 
-
+![An example of a geocache on BYU campus. This cache has a Terrain and Difficulty rating of 2, is size ”Other”, and has received 48 favorites to date](assets/images/posts/geocache/cache_page_example.png "Spherical Miracle")
