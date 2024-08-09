@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Caching In With Bayesian Statistics"
+title: Caching In With Bayesian Statistics
 date: 2024-08-09
 author: Drew Millane and Sam Spackman
 introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
