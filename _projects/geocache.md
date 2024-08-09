@@ -42,29 +42,18 @@ For the alpha and beta priors, we opted for parameters that would yield an expec
 approximately five favorites for each group. This decision was made due to our limited insight into the
 mean count for each group, assuming a uniformity across them.
 
-$$
-y_{i} \mid \lambda_{i} \sim \text{Pois}(\lambda_{i})
-$$
+$$ y_{i} \mid \lambda_{i} \sim \text{Pois}(\lambda_{i}) $$
 
-$$
-\lambda_{i} \mid \alpha_{i}, \beta_{i} \sim \text{Gamma}(\alpha_{i},\beta_{i})
-$$
+$$ \lambda_{i} \mid \alpha_{i}, \beta_{i} \sim \text{Gamma}(\alpha_{i}, \beta_{i}) $$
 
-$$
-\alpha_{i} \mid c, d \sim \text{Gamma}(c,d)
-$$
+$$ \alpha_{i} \mid c, d \sim \text{Gamma}(c, d) $$
 
-$$
-\beta_{i} \mid e, f \sim \text{Gamma}(e,f)
-$$
+$$ \beta_{i} \mid e, f \sim \text{Gamma}(e, f) $$
 
-Where \( y_i \) is the number of favorites a given cache has received. 
+$$ y_i \text{ is the number of favorites a given cache has received} $$
 
-The prior parameters are:
-- \( c = 5 \)
-- \( d = 1 \)
-- \( e = 1 \)
-- \( f = 1 \)
+$$ \text{Prior: } c = 5, \, d = 1, \, e = 1, \, f = 1 $$
+
 
 Our objective was to sample the posterior distribution for each group manually and through a Probabilistic Programming Language (PPL). This approach allows us to infer whether there are differences between the groups based on favorites.
 
