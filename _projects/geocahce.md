@@ -2,9 +2,7 @@
 layout: post
 title:  "Caching In With Bayesian Statistics"
 date:   2024-08-09
-introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and
-caches in the world growing every year, it is important to know what kind of geocache people like
-to find.
+introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
 read_time: true
 image: 
   path: https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg
