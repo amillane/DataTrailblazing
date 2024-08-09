@@ -61,24 +61,13 @@ Our objective was to sample the posterior distribution for each group manually a
 ## By Hand 
 For the by-hand approach, we first needed to start with our joint posterior density, as shown below:
 
-$$
-p(\lambda_{i} \mid \alpha_{i}, \beta_{i}, c, d, e, f, y_{1}, \ldots, y_{m}) \propto p(y \mid \lambda_{i}) p(\alpha_{i} \mid c, d) p(\beta_{i} \mid e, f)
-$$
+$$ p(\lambda_{i} \mid \alpha_{i}, \beta_{i}, c, d, e, f, y_{1}, ...,y_{m}) \propto p( y \mid \lambda_{i})p(\alpha_{i} \mid c,d)p(\beta_{i} \mid e,f) $$ 
+$$ \quad \prod_{i=1}^{n}\prod_{j=1}^{m}\frac{\lambda^{y_{ij}}e^{-\lambda_{i}}}{y_{ij}!} \frac{\beta_{i}^{\alpha_{i}}}{\Gamma(\alpha_{i})}\lambda_{i}^{\alpha_{i}-1}e^{-\beta_{i}\lambda_{i}}\frac{d^{c}}{\Gamma(c)}\alpha_{i}^{c-1}e^{-d\alpha_{i}}\frac{f^{e}}{\Gamma(e)}\beta_{i}^{e-1}e^{-f\beta_{i}} $$
 
-$$
-\quad \prod_{i=1}^{n}\prod_{j=1}^{m} \frac{\lambda^{y_{ij}} e^{-\lambda_{i}}}{y_{ij}!} \frac{\beta_{i}^{\alpha_{i}}}{\Gamma(\alpha_{i})} \lambda_{i}^{\alpha_{i}-1} e^{-\beta_{i} \lambda_{i}} \frac{d^{c}}{\Gamma(c)} \alpha_{i}^{c-1} e^{-d \alpha_{i}} \frac{f^{e}}{\Gamma(e)} \beta_{i}^{e-1} e^{-f \beta_{i}}
-$$
 
-The approach we wanted to take was to derive the full conditionals of \(\lambda\), \(\alpha\), and \(\beta\) for each group. To derive the full conditionals, we took the log of the joint. Below are the full conditionals for the parameters:
+The approach we wanted to take was to take the full conditionals of both $\lambda$, $\alpha$, and $\beta$ for each group. To derive the full conditionals we took the log of the joint. Below is the full conditional for the parameters. 
 
-$$
-(\lambda_{i} \mid \cdot) = \sum_{j=1}^{m} [y_{ij} \log(\lambda_{i})] - m \lambda_{i} + (\alpha_{i} - 1) \log(\lambda_{i}) - \beta_{i} \lambda_{i}
-$$
+$$(\lambda_{i} \mid \cdot) = \sum_{j=1}^{m}[y_{ij}\log(\lambda_{i})] - m\lambda_{i} + (\alpha_{i}-1)\log(\lambda_{i}) - \beta_{i}\lambda_{i}$$
+$$(\alpha_{i} \mid \cdot) = \alpha_{i}\log(\beta_{i})-\log(\Gamma(\alpha_{i}))+\alpha_{i}\log(\lambda)+(c-1)\log(\alpha_{i})-d\alpha_{i}$$ 
+$$(\beta_{i} \mid \cdot) \sim \text{Gamma}(\alpha_{i}+e,\lambda_{i}+f)$$
 
-$$
-(\alpha_{i} \mid \cdot) = \alpha_{i} \log(\beta_{i}) - \log(\Gamma(\alpha_{i})) + \alpha_{i} \log(\lambda) + (c - 1) \log(\alpha_{i}) - d \alpha_{i}
-$$
-
-$$
-(\beta_{i} \mid \cdot) \sim \text{Gamma}(\alpha_{i} + e, \lambda_{i} + f)
-$$
