@@ -26,4 +26,4 @@ others are as small as a thimble. When a geocacher finds a geocache they have th
 cache a “favorite”, similar to a “like” on social media. The goal of our analysis is to determine whether
 a cache’s Terrain or Difficulty rating affects the number of favorites it receives.
 
-![An example of a geocache on BYU campus. This cache has a Terrain and Difficulty rating of 2, is size ”Other”, and has received 48 favorites to date](assets/images/posts/geocache/cache_page_example.png "Spherical Miracle")
+![An example of a geocache on BYU campus. This cache has a Terrain and Difficulty rating of 2, is size ”Other”, and has received 48 favorites to date](./assets/images/posts/geocache/cache_page_example.png "Spherical Miracle")
