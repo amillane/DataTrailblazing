@@ -174,7 +174,7 @@ Plotted below are the densities of the mean favorites of each group for Difficul
 
 
 
-![Densities of mean number of favorites by Difficulty rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Diffculty.jpeg?raw=true)
+![Densities of Difficulty rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Diffculty.jpeg?raw=true)
 
 ![Densities of mean number of favorites by Terrain rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Terrain.jpeg?raw=true)
 
