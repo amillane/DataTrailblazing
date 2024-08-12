@@ -5,9 +5,7 @@ date: 2024-08-09
 author: Drew Millane and Sam Spackman
 introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
 read_time: true
-image:
-  thumbnail: ../assets/images/posts/geocache/geocachethumbnail.jpg
-  caption: "Photo from [Unsplash](https://www.unsplash.com)"
+image: ../assets/images/posts/geocache/geocachethumbnail.jpg
 ---
 
 # Geocache: What is it? 
@@ -83,4 +81,131 @@ $$
 (\beta_{i} \mid \cdot) \sim \text{Gamma}(\alpha_{i} + e, \lambda_{i} + f)
 $$
 
+1. **Choose initial values** for all `λ`, `α`, and `β`.
 
+2. **For 10,000 Draws:**
+
+    1. **For each group:**
+    
+        - **Sample** `β` from a Gamma distribution.
+        - **Slice sample** the full conditional of `α`.
+        - **Slice sample** the full conditional of `λ`.
+
+# PPL
+
+For our Probabilistic Programming Language (PPL), we opted for STAN. STAN facilitated the setup of the hierarchical model more efficiently than deriving the full conditionals manually. However, in terms of computational time, the PPL lagged significantly behind the slice sampler. While the manual sampler took approximately 55 seconds, the PPL required around 442 seconds to complete the computation. This substantial time gap underscores the value of the manual sampler.
+
+
+# Model Diagnostics
+To validate our sampling from the posterior distribution, we assessed both the mixing quality and effective sample size of our sampler.
+
+![Trace Plots](../assets/images/posts/geocache/Trace.jpeg "Trace Plots")
+
+Based on our trace plot analysis, it is evident that our sampler exhibits excellent mixing behavior and effectively generates samples that appear to be independent. Additionally, the effective sample size for each parameter $\lambda$ closely matches the total number of samples collected, minus those discarded during the burn-in period. In conclusion, our sampler performs admirably in capturing samples from the posterior distribution.
+
+
+| **Lambda** | **Value** |
+|------------|-----------|
+| var1       | 8697.055  |
+| var2       | 8931.027  |
+| var3       | 9578.830  |
+| var4       | 9000.000  |
+| var5       | 9389.972  |
+| var6       | 9792.548  |
+| var7       | 8683.698  |
+| var8       | 9000.000  |
+| var9       | 9000.000  |
+
+## Comparing Samplers
+
+We compared our manual and PPL samplers to check if they agreed within Monte Carlo error. By taking samples from both and calculating the differences, we created confidence intervals. The intervals, as shown below, encompass zero, suggesting that the samples are statistically equivalent within Monte Carlo error. This supports us to go forward with our analysis.
+
+### Difference in PPL/By-hand estimation of mean favorites per group for Difficulty
+
+| **Difficulty Level** | **Lower Bound** | **Upper Bound** |
+|----------------------|------------------|------------------|
+| 1                    | -0.0012          | 0.0005           |
+| 1.5                  | -0.0001          | 0.0003           |
+| 2                    | -0.0001          | 0.0003           |
+| 2.5                  | -0.0007          | 0.0003           |
+| 3                    | -0.0007          | 0.0006           |
+| 3.5                  | -0.0009          | 0.0014           |
+| 4                    | -0.0012          | 0.0017           |
+| 4.5                  | -0.0001          | 0.0049           |
+| 5                    | -0.0036          | 0.0019           |
+
+### Difference in PPL/By-hand estimation of mean favorites per group for Terrain
+
+| **Terrain Level** | **Lower Bound** | **Upper Bound** |
+|-------------------|------------------|------------------|
+| 1                 | -0.0004          | 0.0020           |
+| 1.5               | -0.0001          | 0.0004           |
+| 2                 | -0.0003          | 0.0002           |
+| 2.5               | -0.0004          | 0.0003           |
+| 3                 | -0.0003          | 0.0005           |
+| 3.5               | -0.0005          | 0.0004           |
+| 4                 | -0.0004          | 0.0010           |
+| 4.5               | -0.0006          | 0.0023           |
+| 5                 | -0.0024          | 0.0010           |
+
+## Sensitivity of Priors
+
+We wanted to see how our model reacts to different priors. We calculated confidence intervals for our original prior and for new ones, where one prior had a shape parameter of 1000 while the others had a shape and scale parameter of 1. The table below shows that there's not much difference between the two priors, indicating that our model isn't sensitive to priors because of the large amount of data we have.
+
+### The difference of the priors: The one we chose and the priors c = 1000, d = 1, e = 1, f = 1
+
+| **Lower Bound** | **Upper Bound** |
+|-----------------|------------------|
+| 0.0004          | 0.0028           |
+| 0.0003          | 0.0008           |
+| 0.0011          | 0.0016           |
+| 0.0023          | 0.0030           |
+| 0.0028          | 0.0036           |
+| 0.0056          | 0.0065           |
+| 0.0081          | 0.0095           |
+| 0.0166          | 0.0195           |
+| 0.0148          | 0.0182           |
+
+## Results
+
+Plotted below are the densities of the mean favorites of each group for Difficulty and Terrain. On both graphs the extreme groups (highest and lowest ratings) have the highest mean number of favorites. Also of note is the fact that each group has very distinct distributions, almost completely without overlap. This implies that the Difficulty and Terrain rating of a geocache does indeed affect the number of favorites that the cache receives.
+
+
+
+![Densities of mean number of favorites by Difficulty rating](../assets/images/posts/geocache/Diffculty.jpeg)
+
+![Densities of mean number of favorites by Terrain rating](../assets/images/posts/geocache/Terrain.jpeg)
+
+## Frequentist Analysis
+
+We conducted a frequentist analysis on our data, employing the Poisson likelihood to determine the Maximum Likelihood Estimators (MLE) for each group. Our findings for both difficulty and terrain revealed estimates closely resembling those from our Bayesian analysis. This consistency can be attributed to the amount of data at our disposal. However, the Bayesian approach offers the advantage of interpreting parameters with statements of probability, a capability not afforded by the frequentist approach.
+
+
+| **Difficulty Level** | **Bayesian Lower** | **Bayesian Upper** | **Frequentist** |
+|----------------------|---------------------|---------------------|------------------|
+| 1                    | 8.3105              | 8.4326              | 8.3709           |
+| 1.5                  | 2.4336              | 2.4603              | 2.4472           |
+| 2                    | 2.9928              | 3.0254              | 3.0091           |
+| 2.5                  | 4.2801              | 4.3467              | 4.3130           |
+| 3                    | 5.1512              | 5.2386              | 5.1940           |
+| 3.5                  | 6.0822              | 6.2378              | 6.1602           |
+| 4                    | 7.0369              | 7.2340              | 7.1352           |
+| 4.5                  | 8.0938              | 8.4289              | 8.2625           |
+| 5                    | 10.2651             | 10.6396             | 10.4520          |
+
+
+| **Terrain Level** | **Bayesian Lower** | **Bayesian Upper** | **Frequentist** |
+|-------------------|---------------------|---------------------|------------------|
+| 1                 | 12.2178             | 12.3779             | 12.2977          |
+| 1.5               | 4.0593              | 4.0948              | 4.0772           |
+| 2                 | 2.8456              | 2.8818              | 2.8634           |
+| 2.5               | 2.5303              | 2.5774              | 2.5538           |
+| 3                 | 2.3400              | 2.3891              | 2.3646           |
+| 3.5               | 2.0860              | 2.1450              | 2.1158           |
+| 4                 | 2.7744              | 2.8675              | 2.8203           |
+| 4.5               | 4.2199              | 4.4108              | 4.3138           |
+| 5                 | 5.1148              | 5.3407              | 5.2294           |
+
+## Conclusion
+
+After reviewing our analysis we conclude that the number of favorites that a cache receives does indeed depend on its Difficulty and Terrain rating. Many geocaches like to have the option of quick and easy to find geocaches so they can keep up a daily caching streak. Perhaps easy to find geocaches receive many favorites for this reason. On the other side of the spectrum, perhaps geocachers keep difficult caches on their radar and once they have successfully found these caches they feel rewarded after the amount of effort they put into locating it that they want to award these caches a favorite. Speculation aside, it is clear that caches with the lowest and highest Terrain and Difficulty ratings receive the most favorites.
