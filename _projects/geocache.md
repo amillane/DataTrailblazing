@@ -6,7 +6,7 @@ author: Drew Millane and Sam Spackman
 introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
 read_time: true
 image: 
-  thumbnail: https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/geocachethumbnail.jpgraw=true
+  path: https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/geocachethumbnail.jpgraw=true
   caption: "Photo from [Unsplash](https://www.unsplash.com)"
 ---
 
