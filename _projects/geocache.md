@@ -5,7 +5,10 @@ date: 2024-08-09
 author: Drew Millane and Sam Spackman
 introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
 read_time: true
-image: /assets/images/posts/geocache/geocachethumbnail.jpg
+image: 
+    thumbnail: https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/geocachethumbnail.jpg
+    raw=true
+    caption: "Photo from [Unsplash](https://www.unsplash.com)"
 ---
 
 # Geocache: What is it? 
@@ -99,7 +102,7 @@ For our Probabilistic Programming Language (PPL), we opted for STAN. STAN facili
 # Model Diagnostics
 To validate our sampling from the posterior distribution, we assessed both the mixing quality and effective sample size of our sampler.
 
-![Trace Plots](/assets/images/posts/geocache/Trace.jpeg "Trace Plots")
+![Trace Plots](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Trace.jpeg?raw=true "Trace Plots")
 
 Based on our trace plot analysis, it is evident that our sampler exhibits excellent mixing behavior and effectively generates samples that appear to be independent. Additionally, the effective sample size for each parameter $\lambda$ closely matches the total number of samples collected, minus those discarded during the burn-in period. In conclusion, our sampler performs admirably in capturing samples from the posterior distribution.
 
@@ -172,9 +175,9 @@ Plotted below are the densities of the mean favorites of each group for Difficul
 
 
 
-![Densities of mean number of favorites by Difficulty rating](/assets/images/posts/geocache/Diffculty.jpeg)
+![Densities of mean number of favorites by Difficulty rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Diffculty.jpeg?raw=true)
 
-![Densities of mean number of favorites by Terrain rating](/assets/images/posts/geocache/Terrain.jpeg)
+![Densities of mean number of favorites by Terrain rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Terrain.jpeg?raw=true)
 
 ## Frequentist Analysis
 
