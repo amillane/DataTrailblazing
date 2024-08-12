@@ -5,7 +5,7 @@ date: 2024-08-09
 author: Drew Millane and Sam Spackman
 introduction: Geocaching is the largest treasure hunt in the world. With the number of active geocachers and caches in the world growing every year, it is important to know what kind of geocache people like to find.
 read_time: true
-image: ../assets/images/posts/geocache/geocachethumbnail.jpg
+image: /assets/images/posts/geocache/geocachethumbnail.jpg
 ---
 
 # Geocache: What is it? 
@@ -24,7 +24,7 @@ others are as small as a thimble. When a geocacher finds a geocache they have th
 cache a “favorite”, similar to a “like” on social media. The goal of our analysis is to determine whether
 a cache’s Terrain or Difficulty rating affects the number of favorites it receives.
 
-![An example of a geocache on BYU campus. This cache has a Terrain and Difficulty rating of 2, is size ”Other”, and has received 48 favorites to date](../assets/images/posts/geocache/cache_page_example.png "Spherical Miracle")
+![An example of a geocache on BYU campus. This cache has a Terrain and Difficulty rating of 2, is size ”Other”, and has received 48 favorites to date](/assets/images/posts/geocache/cache_page_example.png "Spherical Miracle")
 
 # The Data
 We scraped the data of 140,000 geocaches hidden in Utah and California, getting the ID, Difficulty,
@@ -99,7 +99,7 @@ For our Probabilistic Programming Language (PPL), we opted for STAN. STAN facili
 # Model Diagnostics
 To validate our sampling from the posterior distribution, we assessed both the mixing quality and effective sample size of our sampler.
 
-![Trace Plots](../assets/images/posts/geocache/Trace.jpeg "Trace Plots")
+![Trace Plots](/assets/images/posts/geocache/Trace.jpeg "Trace Plots")
 
 Based on our trace plot analysis, it is evident that our sampler exhibits excellent mixing behavior and effectively generates samples that appear to be independent. Additionally, the effective sample size for each parameter $\lambda$ closely matches the total number of samples collected, minus those discarded during the burn-in period. In conclusion, our sampler performs admirably in capturing samples from the posterior distribution.
 
@@ -120,7 +120,7 @@ Based on our trace plot analysis, it is evident that our sampler exhibits excell
 
 We compared our manual and PPL samplers to check if they agreed within Monte Carlo error. By taking samples from both and calculating the differences, we created confidence intervals. The intervals, as shown below, encompass zero, suggesting that the samples are statistically equivalent within Monte Carlo error. This supports us to go forward with our analysis.
 
-### Difference in PPL/By-hand estimation of mean favorites per group for Difficulty
+### *Difference in PPL/By-hand estimation of mean favorites per group for Difficulty*
 
 | **Difficulty Level** | **Lower Bound** | **Upper Bound** |
 |----------------------|------------------|------------------|
@@ -134,7 +134,7 @@ We compared our manual and PPL samplers to check if they agreed within Monte Car
 | 4.5                  | -0.0001          | 0.0049           |
 | 5                    | -0.0036          | 0.0019           |
 
-### Difference in PPL/By-hand estimation of mean favorites per group for Terrain
+### *Difference in PPL/By-hand estimation of mean favorites per group for Terrain*
 
 | **Terrain Level** | **Lower Bound** | **Upper Bound** |
 |-------------------|------------------|------------------|
@@ -152,7 +152,7 @@ We compared our manual and PPL samplers to check if they agreed within Monte Car
 
 We wanted to see how our model reacts to different priors. We calculated confidence intervals for our original prior and for new ones, where one prior had a shape parameter of 1000 while the others had a shape and scale parameter of 1. The table below shows that there's not much difference between the two priors, indicating that our model isn't sensitive to priors because of the large amount of data we have.
 
-### The difference of the priors: The one we chose and the priors c = 1000, d = 1, e = 1, f = 1
+### *The difference of the priors: The one we chose and the priors c = 1000, d = 1, e = 1, f = 1*
 
 | **Lower Bound** | **Upper Bound** |
 |-----------------|------------------|
@@ -172,9 +172,9 @@ Plotted below are the densities of the mean favorites of each group for Difficul
 
 
 
-![Densities of mean number of favorites by Difficulty rating](../assets/images/posts/geocache/Diffculty.jpeg)
+![Densities of mean number of favorites by Difficulty rating](/assets/images/posts/geocache/Diffculty.jpeg)
 
-![Densities of mean number of favorites by Terrain rating](../assets/images/posts/geocache/Terrain.jpeg)
+![Densities of mean number of favorites by Terrain rating](/assets/images/posts/geocache/Terrain.jpeg)
 
 ## Frequentist Analysis
 
