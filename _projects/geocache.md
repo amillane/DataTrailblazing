@@ -7,6 +7,7 @@ introduction: Geocaching is the largest treasure hunt in the world. With the num
 read_time: true
 image: 
   path: https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/geocachethumbnail.jpgraw=true
+  thumbnail: https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/geocachethumbnail.jpgraw=true
   caption: "Photo from [Unsplash](https://www.unsplash.com)"
 ---
 
