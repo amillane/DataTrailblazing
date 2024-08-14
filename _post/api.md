@@ -10,7 +10,6 @@ date: 2022-10-19
 author: Drew Millane 
 introduction: Using API keys to webscrape weather data.
 read_time: true
-excerpt: false
 image: 
   path: https://www.stockvault.net/data/2007/03/01/98725/preview16.jpg
   thumbnail: https://www.stockvault.net/data/2007/03/01/98725/preview16.jpg
