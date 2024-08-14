@@ -26,7 +26,7 @@
   </footer>
   <div class="entry-excerpt">
     {% if post.excerpt %}
-      {{ post.excerpt | markdownify | truncate: 50 }}
+      {{ post.excerpt | markdownify | truncatewords: 30 }}
       <p><a href="{{ post.url | relative_url }}" class="more-link">{{ site.data.theme.t.read_more | default: 'Read More' }} <span class="icon icon--arrow-right">{% include icon-arrow-right.svg %}</span></a></p>
     {% endif %}
   </div>
