@@ -24,7 +24,7 @@ Mars above), others are easy to get to but craftily hidden. A cache’s “Terra
 physical effort that will be needed to get to the cache while a cache’s “Difficulty” rating indicates the
 amount of effort that will go into solving or finding the cache. Some geocaches are as large as a boulder,
 others are as small as a thimble. When a geocacher finds a geocache they have the option to grant that
-cache a “favorite”, similar to a “like” on social media. The goal of our analysis is to determine whether
+cache a “favorite”, similar to a “like” on social media. Sam and I wanted to determine whether
 a cache’s Terrain or Difficulty rating affects the number of favorites it receives.
 
 ![An example of a geocache on BYU campus. This cache has a Terrain and Difficulty rating of 2, is size ”Other”, and has received 48 favorites to date](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/cache_page_example.png?raw=true "Spherical Miracle")
@@ -34,7 +34,6 @@ We scraped the data of 140,000 geocaches hidden in Utah and California, getting 
 Terrain, Date Hidden, and number of Favorites.
 
 # Our Model
-
 The favorite measure is quantified as a count, prompting our selection of a Poisson likelihood. There are
 nine groups each for terrain and difficulty. In the model depicted below, every group received their own
 rate parameter, which follows to a Gamma distribution. Additionally, we imposed priors on the alpha
@@ -173,8 +172,6 @@ We wanted to see how our model reacts to different priors. We calculated confide
 
 Plotted below are the densities of the mean favorites of each group for Difficulty and Terrain. On both graphs the extreme groups (highest and lowest ratings) have the highest mean number of favorites. Also of note is the fact that each group has very distinct distributions, almost completely without overlap. This implies that the Difficulty and Terrain rating of a geocache does indeed affect the number of favorites that the cache receives.
 
-
-
 ![Densities of Difficulty rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Diffculty.jpeg?raw=true)
 
 ![Densities of mean number of favorites by Terrain rating](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/posts/geocache/Terrain.jpeg?raw=true)
@@ -212,3 +209,5 @@ We conducted a frequentist analysis on our data, employing the Poisson likelihoo
 ## Conclusion
 
 After reviewing our analysis we conclude that the number of favorites that a cache receives does indeed depend on its Difficulty and Terrain rating. Many geocaches like to have the option of quick and easy to find geocaches so they can keep up a daily caching streak. Perhaps easy to find geocaches receive many favorites for this reason. On the other side of the spectrum, perhaps geocachers keep difficult caches on their radar and once they have successfully found these caches they feel rewarded after the amount of effort they put into locating it that they want to award these caches a favorite. Speculation aside, it is clear that caches with the lowest and highest Terrain and Difficulty ratings receive the most favorites.
+
+If you want to check out our slice sampler or STAN code go to our [repository](https://github.com/amillane/geocache_bayesian_project)!
