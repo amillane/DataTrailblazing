@@ -14,6 +14,9 @@ actions:
   - label: "LinkedIn"
     icon: linkedin
     url: "https://www.linkedin.com/in/drewmillane"
+  - label: "Github"
+    icon: github
+    url: "https://github.com/amillane"
 ---
 
 Hello! My name is Drew Millane, and I am a statistician and data science enthusiast at heart.
