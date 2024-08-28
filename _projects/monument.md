@@ -33,12 +33,54 @@ A key advantage of DIC is that certain software techniques enable sub-pixel reso
 The VG software allows for measurements of any object under a micron of resolution. Furthermore, it has the added benefit of being in video format with measurements in real-time. Using the proper cameras and lenses VG will be able to detect minuscule movement The Monument is making, fraction of a milimeter.
 
 # Equipment
+The equipment that was utilized for the monument measurement was an Imetrum DMS system that incorporates Video Gauge (VG), two cameras, 4 lenses, and a surveyor tripod. The cameras used had a sampling of 120 Hz, which means that the DMS stored 250 MB of data every second the camera was recording. 
 
 # Data Collection 
+Data was collected on eight separate occasions at different locations and times around The Monument. The goal was to collect data before, during, and after the lunch break to capture the transition of people being in the monument. As shown in this image from Google Maps, there were three sites where the structure was recorded.
+
+!Site Locations
+*Figure 1: Site Locations*
+
+## Site Descriptions
+
+- **Site 1**: Located on the north face, directly under the structure. Videos taken underneath the top square base.
+- **Site 2**: Positioned 100 meters away from the east face. Videos taken of the column portion of the structure.
+- **Site 3**: Relatively close to Site 2, at a different viewpoint southwest of Site 2. Videos taken of the columns of the structure.
+
+## Recording Information
+
+| Site | Time  | Rec Length (sec) | Target Distance (m) |
+|------|-------|------------------|---------------------|
+| 1    | 12:05 | 100              | 62                  |
+| 1    | 12:10 | 100              | 62                  |
+| 1    | 12:19 | 137              | 62                  |
+| 1    | 12:34 | 603              | 62                  |
+| 2    | 13:56 | 201              | 118                 |
+| 2    | 14:02 | 136              | 118                 |
+| 2    | 14:21 | 215              | 118                 |
+| 3    | 14:43 | 1092             | 114                 |
+
+*Table 1: Recording Information*
 
 # Exploratory Data Analysis 
+Data acquired from Site 1 gathered displacement on both the x and y axis over time. Site 2 and 3 measured the rotation of the column portion of the monument from north to south.
 
-## FFT
+!Base of The Monument
+*Figure 2: Base of The Monument*
+
+Figure 3 shows the rotation measurements taken at Site 3. Between 0 and 300 seconds, there is a consistent signal that fluctuates between -0.01 and 0 pixels. Although this consistent signal appears throughout the measurement, it is intermittently interrupted by noise, such as the disturbance observed at 600 seconds.
+
+This phenomenon was present in all the samples taken on that day. The goal is to remove these noise-affected areas to enable a more accurate analysis of the monument's movement.
+
+!Rotation measurements from Site 3
+*Figure 3: Rotation measurements from Site 3*
+
+# FFT
+
+To undertake this, the Fast Fourier Transform (FFT) was implemented. FFT is a measurement method that converts a signal in the time domain to the frequency domain \cite{fft}. In other words, this allows for individual frequencies to be detected throughout the signal. 
+
+In the case of the Monument, the goal of this project is to be able to measure what frequency the structure is moving. The graph below shows the frequencies of Site 3 in the frequency domain. It appears that the most powerful frequencies are under 0.05 Hz.
+
 
 # Next Steps
 
