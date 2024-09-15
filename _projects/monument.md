@@ -75,10 +75,13 @@ This phenomenon was present in all the samples taken on that day. The goal is to
 
 # FFT
 
-To undertake this, the Fast Fourier Transform (FFT) was implemented. FFT is a measurement method that converts a signal in the time domain to the frequency domain \cite{fft}. In other words, this allows for individual frequencies to be detected throughout the signal. 
+To undertake this, the Fast Fourier Transform (FFT) was implemented. FFT is a measurement method that converts a signal in the time domain to the frequency domain. In other words, this allows for individual frequencies to be detected throughout the signal. 
 
-In the case of the Monument, the goal of this project is to be able to measure what frequency the structure is moving. The graph below shows the frequencies of Site 3 in the frequency domain. It appears that the most powerful frequencies are under 0.05 Hz.
+In the case of the Monument, the goal of this project is to be able to measure what frequency the structure is moving. With FFT's we can remove the noise frequencies from wind, foot traffic, and other inhibitors that may affected the camera. The graph below shows the frequencies of Site 3 in the frequency domain. 
 
 
 # Next Steps
 
+This analysis only scratches the surface of the full story. The next steps in the project involve exploring why the Monument consistently resonates at 0.75 Hz. Could it be due to the vibrations from the London Underground? Or perhaps the metal railings inside the structure? If this is the true natural frequency of the Monument, why did Hooke abandon his attempt to prove stellar parallax? Although I wasn't in England long enough to see the project through, the team continues to explore these questions and uncover new ones.
+
+It was a great pleasure to collaborate with Imetrum and witness their impressive technology in action. I'm grateful for the opportunity to contribute my statistical and data analysis skills to such an exciting project. Go visit their [website](https://www.imetrum.com/)! and check out their innovative technology!
