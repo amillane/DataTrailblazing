@@ -38,8 +38,7 @@ The equipment that was utilized for the monument measurement was an Imetrum DMS 
 # Data Collection 
 Data was collected on eight separate occasions at different locations and times around The Monument. The goal was to collect data before, during, and after the lunch break to capture the transition of people being in the monument. As shown in this image from Google Maps, there were three sites where the structure was recorded.
 
-!Site Locations
-*Figure 1: Site Locations*
+![This map gives an idea of where we recorded data around The Monument](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/monument/Monument%20Project%20Map.png?raw=true "Site Locations")
 
 ## Site Descriptions
 
@@ -60,7 +59,6 @@ Data was collected on eight separate occasions at different locations and times 
 | 2    | 14:21 | 215              | 118                 |
 | 3    | 14:43 | 1092             | 114                 |
 
-*Table 1: Recording Information*
 
 # Exploratory Data Analysis 
 Data acquired from Site 1 gathered displacement on both the x and y axis over time. Site 2 and 3 measured the rotation of the column portion of the monument from north to south.
