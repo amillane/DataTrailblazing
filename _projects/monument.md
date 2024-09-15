@@ -66,7 +66,7 @@ Data acquired from Site 1 gathered displacement on both the x and y axis over ti
 !Base of The Monument
 *Figure 2: Base of The Monument*
 
-Figure 3 shows the rotation measurements taken at Site 3. Between 0 and 300 seconds, there is a consistent signal that fluctuates between -0.01 and 0 pixels. Although this consistent signal appears throughout the measurement, it is intermittently interrupted by noise, such as the disturbance observed at 600 seconds.
+Figure 3 shows the rotation measurements taken at Site 3. Between 0 and 1000 seconds, there is a consistent signal that fluctuates between -0.01 and 0 pixels. Although this consistent signal appears throughout the measurement, it is intermittently interrupted by noise, such as the disturbance observed at 600 seconds.
 
 This phenomenon was present in all the samples taken on that day. The goal is to remove these noise-affected areas to enable a more accurate analysis of the monument's movement.
 
