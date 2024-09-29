@@ -68,8 +68,7 @@ Figure 3 shows the rotation measurements taken at Site 3. Between 0 and 1000 sec
 
 This phenomenon was present in all the samples taken on that day. The goal is to remove these noise-affected areas to enable a more accurate analysis of the monument's movement.
 
-!Rotation measurements from Site 3
-*Figure 3: Rotation measurements from Site 3*
+![Site 2](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/monument/graph_1.png?raw=true)
 
 # FFT
 
