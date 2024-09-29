@@ -7,7 +7,6 @@ introduction: Working alongside the Lord Mayor of London, City, University of Lo
 read_time: true
 image: 
   path: https://github.com/amillane/amillane.github.io/blob/main/public/test.jpeg?raw=true
-  thumbnail: https://github.com/amillane/amillane.github.io/blob/main/public/test.jpeg?raw=true
 ---
 
 
