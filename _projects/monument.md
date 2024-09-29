@@ -63,8 +63,7 @@ Data was collected on eight separate occasions at different locations and times 
 # Exploratory Data Analysis 
 Data acquired from Site 1 gathered displacement on both the x and y axis over time. Site 2 and 3 measured the rotation of the column portion of the monument from north to south.
 
-!Base of The Monument
-*Figure 2: Base of The Monument*
+![Measuring the base of The Monument ](https://github.com/amillane/DataTrailblazing/blob/master/assets/images/monument/Capture.PNG?raw=true)
 
 Figure 3 shows the rotation measurements taken at Site 3. Between 0 and 1000 seconds, there is a consistent signal that fluctuates between -0.01 and 0 pixels. Although this consistent signal appears throughout the measurement, it is intermittently interrupted by noise, such as the disturbance observed at 600 seconds.
 
