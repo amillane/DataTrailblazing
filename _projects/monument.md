@@ -6,7 +6,7 @@ author: Drew Millane
 introduction: Working alongside the Lord Mayor of London, City, University of London, and Imetrum, we began uncovering answers to questions about the Great Fire of London monument created by scientist Robert Hooke.
 read_time: true
 image: 
-  path: https://github.com/amillane/amillane.github.io/blob/main/public/test.jpeg?raw=true
+  thumbnail: https://github.com/amillane/amillane.github.io/blob/main/public/test.jpeg?raw=true
 ---
 
 
